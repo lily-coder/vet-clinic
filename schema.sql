@@ -40,3 +40,40 @@ ALTER TABLE animals
 	REFERENCES owners(id)
 ; 
 SELECT * FROM animals;
+
+CREATE TABLE vets(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR,
+    age INT,
+    date_of_graduation DATE
+);
+
+CREATE TABLE specializations(
+	species_id INT,
+	vets_id INT,
+    FOREIGN KEY (species_id)
+        REFERENCES species(id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+	FOREIGN KEY (vets_id)
+        REFERENCES vets(id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+	PRIMARY KEY (species_id, vets_id)
+);
+
+CREATE TABLE visits(
+	animals_id INT,
+	vets_id INT,
+    date_of_visit DATE,
+    id INT GENERATED ALWAYS AS IDENTITY,
+	FOREIGN KEY (animals_id)
+        REFERENCES animals (id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+	FOREIGN KEY (vets_id)
+        REFERENCES vets (id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+    PRIMARY KEY(id)
+);
