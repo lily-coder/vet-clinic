@@ -78,4 +78,5 @@ CREATE TABLE visits(
     PRIMARY KEY(id)
 );
 
-CREATE INDEX animal_id_index ON visits (animal_id);
+CREATE INDEX animal_id_index ON visits (animals_id);
+CREATE INDEX vets_id_index ON visits (vets_id);
