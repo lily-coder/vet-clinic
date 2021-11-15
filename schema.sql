@@ -11,7 +11,7 @@ CREATE TABLE animals (
     PRIMARY KEY(id)
 );
 
-ALTER TABLE animals 
+ALTER TABLE animals
     ADD species VARCHAR;
 
 CREATE TABLE owners(
@@ -77,3 +77,5 @@ CREATE TABLE visits(
         ON UPDATE CASCADE,
     PRIMARY KEY(id)
 );
+
+CREATE INDEX animal_id_index ON visits (animal_id);
