@@ -23,6 +23,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitHub: [@lily-coder](https://github.com/lily-coder/)
 - LinkedIn: [Lilian Moraa](https://www.linkedin.com/in/lilian-moraa-99950b1b8/)
 
+👤 **Isabella Namutenda**
+
+-   Github: [@Isabellanamutenda](https://github.com/Isabellanamutenda)
+-   Linkedin: [Isabellanamutenda](https://www.linkedin.com/in/isabella-namutenda/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
