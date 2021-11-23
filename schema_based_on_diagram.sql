@@ -63,3 +63,6 @@ CREATE TABLE treatments_history (
 );
 CREATE INDEX ON treatments_history(treatment_id);
 CREATE INDEX ON treatments_history(medical_history_id);
+CREATE INDEX animals_id_index ON visits (animals_id);
+CREATE INDEX vets_id_index ON visits (vets_id);
+CREATE INDEX owners_email_index ON owners (email);
